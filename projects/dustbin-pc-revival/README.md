@@ -25,10 +25,14 @@ Everything here is real: real hardware problems, real errors, real fixes.
 | Network | No built-in WiFi | 
 | Previous OS | Windows 7 (password protected) |
 
-Since I had no ethernet, I use my Wifi USB Adapter: TP-Link Archer T3U (USB)
-| Component | Details |
-|-----------|---------|
-| Chipset | Realtek RTL8812BU |
+Since I had no ethernet cable/access, and ⚠️ No network connectivity out of the box.
+
+## 🔌 Hardware I Brought to Solve It
+
+| Component    | Details                  |
+|--------------|--------------------------|
+| WiFi Adapter | TP-Link Archer T3U (USB) |
+| Chipset      | Realtek RTL8812BU        |
 ---
 
 ## 🎯 Goals
@@ -101,15 +105,11 @@ then
 chmod +x install-driver.sh
 sudo ./install-driver.sh
 ```
-Installed completed, it pop-up nano editor
-```bash
-/etc/modprobe.d/88x2bu.conf
-```
-I didn't know what to uncomment, left it as it is. ctrl x+y enter. Then I reboot.
+The installer opened /etc/modprobe.d/88x2bu.conf in nano for review. I exited and proceeded to reboot first to test default behaviour before making changes.
 
 ```bash
 sudo reboot
-````
+```
 
 ---
 
@@ -155,7 +155,7 @@ It gave:
 ```bash
 command failed: Network is down (-100)
 # Which means wlan0 is currently down.
-````
+```
 
 Thus:
 1. Activate the interface
