@@ -25,7 +25,9 @@ Everything here is real: real hardware problems, real errors, real fixes.
 | Network | No built-in WiFi | 
 | Previous OS | Windows 7 (password protected) |
 
-Since I had no ethernet, I use my Wifi USB Adapter | TP-Link Archer T3U (USB)
+Since I had no ethernet, I use my Wifi USB Adapter: TP-Link Archer T3U (USB)
+| Component | Details |
+|-----------|---------|
 | Chipset | Realtek RTL8812BU |
 ---
 
